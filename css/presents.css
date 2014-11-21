@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  font-size: 140%;
+}
+
+#slides {
+  height: 100%;
+}
+
+#slides > div {
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+}

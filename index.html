@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Presents</title>
+    <link rel="stylesheet" href="/css/presents.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="presents-status" style="position:fixed; top:0px; bottom:0px"></div>
+    <div id="slides">
+      <div id="slide-0">
+        <h1>Building architectures the easier way</h1>
+      </div>
+      <div id="slide-1">
+        <h1>Hi, I'm Maciej Małecki</h1>
+        <h2>@maciejmalecki</h2>
+        <h2>I talk to servers</h2>
+      </div>
+      <div id="slide-2">
+        <h1>Building architectures the easier way</h1>
+      </div>
+      <div id="slide-3">
+        <h1>Building architectures the easier way*</h1>
+        <h2>*subjectively</h2>
+      </div>
+      <div id="slide-4">
+        <h1>There is NO silver bullet for deployment</h1>
+        <h2>Learn your requirements, constraints and reuse instead!</h2>
+      </div>
+      <div id="slide-5">
+        <h1>How many of you are satisfied with your deployment process?</h1>
+      </div>
+      <div id="slide-6">
+        <h1>Key concepts</h1>
+        <h2>Microservices</h2>
+        <h2>Immutable infrastructure</h2>
+        <h2>Service registries</h2>
+        <h2>Monitoring</h2>
+        <h2>Reuse!</h2>
+      </div>
+      <div id="slide-7">
+        <h1>Microservices</h1>
+        <h2>A concern per a service</h2>
+      </div>
+      <div id="slide-8">
+        <h1>Immutable infrastructure</h1>
+        <h2>Never upgrade your servers!</h2>
+      </div>
+      <div id="slide-9">
+        <h1>Examples of tools that can come useful</h1>
+        <h2>Nix</h2>
+        <h2>Docker</h2>
+        <h2>SmartOS</h2>
+        <h2>Ansible</h2>
+      </div>
+      <div id="slide-10">
+        <h1>Service registries</h1>
+      </div>
+      <div id="slide-11">
+        <h1>Examples of service registries</h1>
+        <h2>etcd</h2>
+        <h2>Consul</h2>
+      </div>
+      <div id="slide-12">
+        <h1>Monitoring</h1>
+      </div>
+      <div id="slide-13">
+        <h1>Here's what you know about your infrastructure without monitoring:</h1>
+      </div>
+      <div id="slide-14"></div>
+      <div id="slide-15">
+        <h1>Examples of monitoring services</h1>
+        <h2>Nagios</h2>
+        <h2>Godot/Forza</h2>
+        <h2>Riemann</h2>
+        <h2>Zabbix</h2>
+      </div>
+      <div id="slide-16">
+        <h1>Reuse!</h2>
+        <h2>You probably don't have the time or money to write a deployment stack</h2>
+      </div>
+      <div id="slide-17">
+        <h1>To sum it up:</h1>
+        <h2>Never upgrade your servers, have your services register with a
+          service registry, monitor them closely and never build stuff that
+          you shouldn't be building</h2>
+      </div>
+      <div id="slide-18">
+        <h1>That's about it, thanks!</h1>
+      </div>
+    </div>
+
+    <script src="/js/broadway-0.1.5.js"></script>
+    <script src="/js/inherits.js"></script>
+    <script src="/js/presents.js"></script>
+    <script src="/js/presents/plugins/controls.js"></script>
+    <script src="/js/presents/plugins/remote.js"></script>
+    <script type="text/javascript">
+      var presents = new Presents();
+      presents.use(Controls);
+      presents.use(Remote, { url: 'ws://127.0.0.1:8000/' });
+      presents.init();
+      presents.goTo(0);
+    </script>
+  </body>
+</html>
+
