@@ -1,0 +1,11 @@
+{
+  "name": "@mmalecki/mediterraneajs-building-architectures-the-easier-way",
+  "version": "1.0.0",
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "dependencies": {
+    "presents-server": "0.0.2"
+  },
+  "scripts": {
+    "start": "presents-server"
+  }
+}
